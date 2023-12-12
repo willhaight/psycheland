@@ -1,0 +1,155 @@
+body {
+  background-color: #dadfea;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1vw;
+}
+
+.content .two, .content, .top {
+  width: 80%;
+}
+
+.top {
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.top #background {
+  width: fit-content;
+  height: fit-content;
+  filter: blur(5px);
+  min-width: 100%;
+  min-height: 100%;
+}
+.top #andy {
+  width: 20%;
+  border: 3px solid #36437c;
+  border-radius: 100%;
+  margin-left: 15%;
+  position: relative;
+  top: 15%;
+  right: 100%;
+  z-index: 5;
+}
+.top div {
+  width: 30%;
+  color: #36437c;
+  background-color: #c4c7cc;
+  border: 3px solid #36437c;
+  border-radius: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 60%;
+  right: 90%;
+  z-index: 5;
+}
+.top div p {
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+}
+.content .one {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #c4c7cc;
+  padding: 1% 3% 1% 3%;
+}
+.content .two {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eff3fc;
+}
+.content .two p {
+  font-weight: bold;
+}
+.content h3 {
+  width: 40%;
+  color: #36437c;
+  font-size: 1.5em;
+  border-bottom: 10px solid #36437c;
+  border-radius: 30%;
+  width: auto;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contact p {
+  margin-left: 4%;
+}
+
+@media only screen and (max-width: 850px) {
+  .content {
+    flex-direction: column;
+    font-size: 3.5em;
+  }
+  .content .one {
+    width: 100%;
+  }
+  .content .one .fold {
+    display: flex;
+    flex-direction: row;
+  }
+  .content .one .fold div {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .content .two {
+    width: 100%;
+  }
+
+  .top {
+    width: 85%;
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .content {
+    font-size: 2em;
+  }
+  .content .one {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .content .two {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.fold h3 {
+  border-bottom: 0px;
+}
+
+.special h3 {
+  width: 40%;
+  color: #36437c;
+  font-size: 1.5em;
+  border-bottom: 10px solid #36437c;
+  border-radius: 30%;
+}
+
+@media only screen and (max-width: 550px) {
+  .content {
+    font-size: 3.5em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
